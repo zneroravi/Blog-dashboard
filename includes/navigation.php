@@ -11,7 +11,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.php">CMS Front</a>
+                <a class="navbar-brand" href="index.php">BLOG</a>
             </div>
             
             
