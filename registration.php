@@ -45,26 +45,59 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
 
 
     if($email ==''){
+
         $error['email'] = 'Email cannot be empty';
+
+
     }
+
+
      if(email_exists($email)){
+
         $error['email'] = 'Email already exists, <a href="index.php">Please login</a>';
+
+
     }
+
+
     if($password == '') {
+
+
         $error['password'] = 'Password cannot be empty';
+
     }
-    foreach ($error as $key => $value) {   
+
+
+
+    foreach ($error as $key => $value) {
+        
         if(empty($value)){
+
             unset($error[$key]);
+
         }
+
+
+
     } // foreach
 
     if(empty($error)){
+
         register_user($username, $email, $password);
+
         login_user($username, $password);
+
+
     }
+
+    
+
 } 
+
+
 ?>
+ 
+
     <!-- Navigation -->
     
     <?php  include "includes/navigation.php"; ?>
@@ -119,5 +152,10 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
         </div> <!-- /.row -->
     </div> <!-- /.container -->
 </section>
+
+
         <hr>
+
+
+
 <?php include "includes/footer.php";?>
