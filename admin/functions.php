@@ -29,11 +29,7 @@ $_SESSION['message']= $msg;
 } else {
 
 $msg = "";
-
-
     }
-
-
 }
 
 
@@ -90,15 +86,7 @@ function users_online() {
 
 
     }
-
-
-
-
-
-
     } // get request isset()
-
-
 }
 
 users_online();
@@ -116,11 +104,7 @@ function confirmQuery($result) {
    
           
       }
-    
-
 }
-
-
 
 function insert_categories(){
     
@@ -363,10 +347,7 @@ function register_user($username, $email, $password){
         $_SESSION['lastname'] = $db_user_lastname;
         $_SESSION['user_role'] = $db_user_role;
             
-        
         redirect("/udemy/cms/index.php");
-
-
         } else {
 
 
